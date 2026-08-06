@@ -1,0 +1,47 @@
+# === 機密情報（絶対にコミットしない） ===
+.env
+.env.local
+*.key
+secrets.*
+
+# === データベース ===
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+database/*.db
+
+# === 音源・生成メディア ===
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.ogg
+*.mp4
+*.mov
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# === OS / エディタ ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# === Streamlit ===
+.streamlit/secrets.toml
+
+# === その他 ===
+AppData/
+*.log
