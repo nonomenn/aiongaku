@@ -307,10 +307,14 @@ def _slug_for(song_id: int, theme: str) -> str:
     return _slug_cache[song_id]
 
 
-def song_dir(song_id: int) -> Path:
+def song_dir(song_id: int, create: bool = True) -> Path | None:
     """
     楽曲の成果物保存先フォルダ（songs/{YYYY-MM}/{NNN}_{slug}/）を返す。
-    既に採番済みのフォルダがあればそれを再利用し、無ければ新規採番して作成する。
+    既に採番済みのフォルダがあればそれを再利用する。
+
+    create=True（既定）: 未作成なら新規採番して作成する。
+    create=False: 参照のみ。未作成の場合はフォルダを作らずNoneを返す。
+        （ダッシュボードの閲覧など、副作用で空フォルダを作りたくない用途で使う）
     """
     song = db.get_song(song_id)
     if song is None:
@@ -318,7 +322,21 @@ def song_dir(song_id: int) -> Path:
 
     month = _month_folder_for(song)
     month_dir = config.SONGS_DIR / month
-    month_dir.mkdir(parents=True, exist_ok=True)
+    if not month_dir.exists():
+        if not create:
+            return None
+        month_dir.mkdir(parents=True, exist_ok=True)
+
+    # スラッグ確定にAPI呼び出しが要る場合があるため、参照のみのときは
+    # マーカーファイルから逆引きしてAPI呼び出しを避ける
+    if not create:
+        for existing in sorted(month_dir.iterdir()):
+            if not existing.is_dir():
+                continue
+            marker = existing / ".song_id"
+            if marker.exists() and marker.read_text(encoding="utf-8").strip() == str(song_id):
+                return existing
+        return None
 
     slug = _slug_for(song_id, song.get("theme") or "")
 
