@@ -169,6 +169,20 @@ def update_song_title(song_id, title) -> None:
         )
 
 
+def update_song_genre(song_id, genre) -> None:
+    """楽曲のジャンルを更新する。3ジャンル以外の値はエラーとする。"""
+    key = config.genre_key(genre)
+    with _conn() as conn:
+        conn.execute(
+            """
+            UPDATE songs
+            SET genre = ?, updated_at = datetime('now')
+            WHERE song_id = ?
+            """,
+            (config.GENRES[key], song_id),
+        )
+
+
 def get_song(song_id) -> dict | None:
     """song_idに対応する楽曲レコードを取得する。存在しなければNone。"""
     with _conn() as conn:
