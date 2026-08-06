@@ -15,12 +15,21 @@ from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
 
+# データ保存先ディレクトリ（AMPS_DATA_DIR）。
+# Renderなど永続ディスクを使うデプロイでは、ここに /data のようなマウントパスを指定する。
+# 未設定の場合はローカル開発時と同じくプロジェクト直下（BASE_DIR）にすべて保存される。
+DATA_DIR = Path(os.getenv("AMPS_DATA_DIR") or BASE_DIR)
+
+# エージェント定義・ブランド資料・コネクタはイメージ（コード）に同梱されるものであり、
+# 永続ディスクではなくBASE_DIR基準のまま固定する。
 AGENTS_DIR = BASE_DIR / "agents"
 BRAND_DIR = BASE_DIR / "brand"
-SONGS_DIR = BASE_DIR / "songs"
-DATABASE_DIR = BASE_DIR / "database"
-REPORTS_DIR = BASE_DIR / "reports"
 CONNECTORS_DIR = BASE_DIR / "connectors"
+
+# 曲データ・DB・レポートは実行時に生成・更新されるデータであり、DATA_DIR基準にする。
+SONGS_DIR = DATA_DIR / "songs"
+DATABASE_DIR = DATA_DIR / "database"
+REPORTS_DIR = DATA_DIR / "reports"
 
 BRAND_GUIDELINE_PATH = BRAND_DIR / "brand_guideline.md"
 DB_PATH = DATABASE_DIR / "amps.db"
@@ -32,6 +41,17 @@ load_dotenv(BASE_DIR / ".env")
 
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY", "")
 MODEL = os.getenv("AMPS_MODEL", "claude-opus-5")
+
+# --- ダッシュボード認証設定 ---
+
+# ダッシュボードのログインパスワード（未設定なら空文字）。
+DASHBOARD_PASSWORD = os.getenv("AMPS_DASHBOARD_PASSWORD", "")
+
+# trueの場合（本番デプロイ環境で設定する想定）、パスワード未設定のままでは
+# ダッシュボードの起動（アクセス許可）自体を拒否する（フェイルクローズ）。
+# ローカルでは未設定のままにしておけば、パスワードが設定されている場合のみ
+# ログインゲートが有効になる。
+AUTH_REQUIRED = os.getenv("AMPS_AUTH_REQUIRED", "").strip().lower() in ("1", "true", "yes")
 
 # --- Claude API呼び出しの既定パラメータ ---
 

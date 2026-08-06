@@ -1,0 +1,25 @@
+# Render Blueprint（Infrastructure as Code）設定。
+# Renderのダッシュボードで「New > Blueprint」からこのリポジトリを選択すると読み込まれる。
+# 詳細な手順は DEPLOY.md を参照。
+
+services:
+  - type: web
+    name: amps-dashboard
+    runtime: docker
+    plan: starter          # 永続ディスクは有料プランが必要（無料プランでは使えない）
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false        # Render の管理画面で手入力する。リポジトリには絶対に置かない
+      - key: AMPS_DASHBOARD_PASSWORD
+        sync: false        # 同上。強力なパスワードを設定すること
+      - key: AMPS_DATA_DIR
+        value: /data        # 永続ディスクのマウント先（下記disk.mountPathと一致させる）
+      - key: AMPS_AUTH_REQUIRED
+        value: "true"       # 本番では必ずtrue（パスワード未設定時はフェイルクローズで起動拒否）
+      - key: AMPS_MODEL
+        value: claude-opus-5
+    disk:
+      name: amps-data
+      mountPath: /data
+      sizeGB: 1

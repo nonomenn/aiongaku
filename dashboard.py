@@ -13,6 +13,7 @@ APIキー（ANTHROPIC_API_KEY）が無くても起動・閲覧はできる。
 エージェントの振る舞いはすべて agents/*.md 側の責務であり、このファイルには一切書かない。
 """
 
+import hmac
 import json
 
 import streamlit as st
@@ -27,6 +28,57 @@ import scheduler
 # =================================================================
 
 st.set_page_config(page_title="AMPS ダッシュボード", page_icon="🎵", layout="wide")
+
+
+def require_login() -> bool:
+    """
+    ログインゲート。アクセスを許可する場合にTrueを返す。
+
+    - AUTH_REQUIREDがTrueなのにDASHBOARD_PASSWORDが未設定の場合は、
+      設定不備としてアクセスを拒否する（フェイルクローズ）。
+    - DASHBOARD_PASSWORDが未設定でAUTH_REQUIREDもFalseの場合は、
+      ローカル利用とみなしてそのまま許可する（ただし警告は表示する）。
+    - それ以外（パスワードが設定されている）はログインを必須にする。
+    """
+    if config.AUTH_REQUIRED and not config.DASHBOARD_PASSWORD:
+        st.error(
+            "このデプロイ環境ではログインが必須（AMPS_AUTH_REQUIRED=true）に"
+            "設定されていますが、AMPS_DASHBOARD_PASSWORD が設定されていません。\n\n"
+            "管理者はデプロイ環境の環境変数に AMPS_DASHBOARD_PASSWORD を設定してください。"
+        )
+        return False
+
+    if not config.DASHBOARD_PASSWORD:
+        st.sidebar.warning(
+            "⚠️ 認証が無効になっています（AMPS_DASHBOARD_PASSWORDが未設定）。\n\n"
+            "このままインターネットに公開しないでください。"
+        )
+        return True
+
+    if st.session_state.get("authenticated", False):
+        if st.sidebar.button("ログアウト"):
+            st.session_state["authenticated"] = False
+            st.rerun()
+        return True
+
+    st.title("🎵 AMPS ダッシュボード")
+    st.subheader("ログイン")
+    with st.form("login_form"):
+        entered_password = st.text_input("パスワード", type="password")
+        login_submitted = st.form_submit_button("ログイン")
+
+    if login_submitted:
+        if hmac.compare_digest(entered_password, config.DASHBOARD_PASSWORD):
+            st.session_state["authenticated"] = True
+            st.rerun()
+        else:
+            st.error("パスワードが違います。")
+
+    return False
+
+
+if not require_login():
+    st.stop()
 
 db.init_db()
 
