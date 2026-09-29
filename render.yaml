@@ -1,0 +1,34 @@
+# Render Blueprint（Infrastructure as Code）。
+# Render の「New > Blueprint」からこのリポジトリを選ぶと読み込まれる。
+# 手順は DEPLOY.md を参照。
+#
+# 注意: このファイルはリポジトリのルートではなく amps/ の中にある。
+# Blueprint はリポジトリ直下を見るため、Render 側で rootDir を amps に指定するか、
+# このファイルをリポジトリ直下へ移すこと（DEPLOY.md に記載）。
+
+services:
+  - type: web
+    name: amps-dashboard
+    runtime: docker
+    rootDir: amps
+    plan: starter          # 永続ディスクは有料プランが必要（無料プランでは使えない）
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false        # Render の管理画面で手入力する。リポジトリには絶対に置かない
+      - key: AMPS_DASHBOARD_PASSWORD
+        sync: false        # 同上。強いパスワードを設定すること
+      - key: SUNO_API_KEY
+        sync: false        # 同上。音源生成を使わないなら空でよい
+      - key: AMPS_DATA_DIR
+        value: /data        # 永続ディスクのマウント先（下の disk.mountPath と一致させる）
+      - key: AMPS_AUTH_REQUIRED
+        value: "true"       # 本番では必ず true（パスワード未設定なら起動を拒否する）
+      - key: AMPS_MODEL
+        value: claude-sonnet-5
+      - key: SUNO_MONTHLY_GENERATION_CAP
+        value: "150"
+    disk:
+      name: amps-data
+      mountPath: /data
+      sizeGB: 1

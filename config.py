@@ -17,12 +17,24 @@ SUNO_API_KEY = os.getenv("SUNO_API_KEY", "")
 SUNO_API_BASE_URL = os.getenv("SUNO_API_BASE_URL", "https://api.evolink.ai")
 SUNO_MODEL = os.getenv("SUNO_MODEL", "suno-v4.5-beta")
 
+# ダッシュボードのログイン。公開する場合は必ず設定すること。
+# 未設定のままインターネットに出すと、誰でも「制作開始」を押せてAPI課金が発生する。
+DASHBOARD_PASSWORD = os.getenv("AMPS_DASHBOARD_PASSWORD", "")
+# true のときはパスワード未設定なら起動を拒否する（デプロイ環境向けのフェイルクローズ）
+AUTH_REQUIRED = os.getenv("AMPS_AUTH_REQUIRED", "").strip().lower() in ("1", "true", "yes")
+
+# データの保存先。永続ディスクを持つデプロイ環境では AMPS_DATA_DIR を指定する。
+# 未設定ならプロジェクト直下に置く（従来どおりの場所）。
+DATA_DIR = Path(os.getenv("AMPS_DATA_DIR") or BASE_DIR)
+
+# agents/ と brand/ はコードと一緒に配布するものなので BASE_DIR 基準のままにする
 AGENTS_DIR = BASE_DIR / "agents"
 BRAND_DIR = BASE_DIR / "brand"
-SONGS_DIR = BASE_DIR / "songs"
-REPORTS_DIR = BASE_DIR / "reports"
-DATABASE_DIR = BASE_DIR / "database"
-DB_PATH = BASE_DIR / "amps.db"
+# 実行時に生成・更新されるものは DATA_DIR 基準
+SONGS_DIR = DATA_DIR / "songs"
+REPORTS_DIR = DATA_DIR / "reports"
+DATABASE_DIR = DATA_DIR / "database"
+DB_PATH = DATA_DIR / "amps.db"
 BRAND_GUIDELINE_PATH = BRAND_DIR / "brand_guideline.md"
 
 # ジャンルと目標比率（合計100）

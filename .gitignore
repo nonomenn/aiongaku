@@ -1,6 +1,17 @@
 .env
+.env.*
+!.env.example
 amps.db
+*.db
 __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Suno が生成した音源（リポジトリに入れない）
+*.mp3
+*.wav
+*.flac
+*.m4a
+*.aac
+*.ogg

@@ -4,6 +4,7 @@
 """
 from __future__ import annotations
 
+import hmac
 from datetime import date
 
 import streamlit as st
@@ -14,6 +15,55 @@ import pipeline
 from connectors import suno
 
 st.set_page_config(page_title="AMPS — AI Music Production System", layout="wide")
+
+
+def require_login() -> bool:
+    """ログインゲート。アクセスを許可する場合にTrueを返す。
+
+    - AUTH_REQUIRED が true なのにパスワード未設定 → 設定不備として拒否（フェイルクローズ）
+    - パスワード未設定かつ AUTH_REQUIRED も false → ローカル利用とみなして通す（警告は出す）
+    - パスワード設定済み → ログインを必須にする
+    """
+    if config.AUTH_REQUIRED and not config.DASHBOARD_PASSWORD:
+        st.error(
+            "このデプロイ環境ではログインが必須（AMPS_AUTH_REQUIRED=true）に設定されていますが、"
+            "AMPS_DASHBOARD_PASSWORD が設定されていません。\n\n"
+            "管理者は環境変数に AMPS_DASHBOARD_PASSWORD を設定してください。"
+        )
+        return False
+
+    if not config.DASHBOARD_PASSWORD:
+        st.sidebar.warning(
+            "⚠️ 認証が無効です（AMPS_DASHBOARD_PASSWORD 未設定）。\n\n"
+            "このままインターネットに公開しないこと。"
+            "公開すると誰でも制作を実行でき、API利用料が発生します。"
+        )
+        return True
+
+    if st.session_state.get("authenticated", False):
+        if st.sidebar.button("ログアウト"):
+            st.session_state["authenticated"] = False
+            st.rerun()
+        return True
+
+    st.title("AMPS")
+    st.subheader("ログイン")
+    with st.form("login_form"):
+        entered = st.text_input("パスワード", type="password")
+        submitted = st.form_submit_button("ログイン")
+    if submitted:
+        # タイミング攻撃を避けるため == ではなく compare_digest で比較する
+        if hmac.compare_digest(entered, config.DASHBOARD_PASSWORD):
+            st.session_state["authenticated"] = True
+            st.rerun()
+        else:
+            st.error("パスワードが違います。")
+    return False
+
+
+if not require_login():
+    st.stop()
+
 db.init_db()
 
 GENRE_LABELS = {k: v["label"] for k, v in config.GENRES.items()}
