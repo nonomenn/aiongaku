@@ -48,9 +48,29 @@ def _extract_field(text: str, label: str) -> Optional[str]:
 
 
 def _extract_score(text: str) -> Optional[int]:
-    m = re.search(r"合計[：:]\s*(\d{1,3})\s*/\s*100", text)
+    """品質レビュー本文から合計点を取り出す。
+
+    quality_check_agent は合計点の書き方が揺れるため、両方に対応する。
+      1) 「合計：84 / 100」のような文章形式
+      2) 「| **合計** | **100** | **89** | |」のような採点表の合計行
+    """
+    # 1) 文章形式（**合計：84 / 100** のように装飾されている場合も拾う）
+    m = re.search(r"合計[：:]\s*\**\s*(\d{1,3})\s*/\s*100", text)
     if m:
         return int(m.group(1))
+
+    # 2) 採点表の合計行。配点列の100を1つだけ除き、残りの最後を点数とみなす
+    #    （満点 100/100 の場合も、1つ除いた残りが100になるので正しく取れる）
+    for line in text.splitlines():
+        if "合計" not in line or not line.strip().startswith("|"):
+            continue
+        nums = [int(x) for x in re.findall(r"\d{1,3}", line)]
+        if len(nums) >= 2 and 100 in nums:
+            nums.remove(100)
+        if nums:
+            return nums[-1]
+
+    # 3) 「84 / 100」だけが書かれている場合
     m = re.search(r"(\d{1,3})\s*/\s*100", text)
     return int(m.group(1)) if m else None
 

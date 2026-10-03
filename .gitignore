@@ -3,6 +3,8 @@
 !.env.example
 amps.db
 *.db
+*.db.bak*
+*.bak.*
 __pycache__/
 *.pyc
 .venv/
