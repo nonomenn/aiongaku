@@ -30,14 +30,20 @@ def _load_brand_guideline() -> str:
 
 
 def run_agent(agent_name: str, upstream_text: str, extra_context: str = "",
-              song_id: Optional[int] = None, max_tokens: int = 4000) -> str:
+              song_id: Optional[int] = None, max_tokens: int = 16000) -> str:
     """`agent_name`（拡張子なし、例: "lyrics_agent"）を実行し、テキスト出力を返す。
 
     1. agents/{agent_name}.md をシステムプロンプトとして読み込む。
     2. brand_guideline.md を判断基準として添える。
     3. 上流成果物 (upstream_text) と追加コンテキストをユーザーメッセージとして渡す。
     4. Anthropic SDKで呼び出し、agent_runs にログを残す。
-    5. 失敗時は指数バックオフでリトライする。
+    5. 失敗時・応答が空だった場合は指数バックオフでリトライする。
+
+    max_tokens について：
+    Sonnet 5 / Opus 5 系は thinking を省略すると適応思考がONになる。
+    思考が max_tokens を使い切ると本文が空のまま返るため、小さすぎる値は危険。
+    実際に 4000 だった頃、品質チェック（最も推論が重い）が2回連続で空を返し、
+    それが「0点」として扱われて歌詞からの作り直しが2周空回りした。
     """
     system_prompt = _load_system_prompt(agent_name)
     brand = _load_brand_guideline()
@@ -66,7 +72,27 @@ def run_agent(agent_name: str, upstream_text: str, extra_context: str = "",
             )
             output_text = "".join(
                 block.text for block in response.content if getattr(block, "type", "") == "text"
-            )
+            ).strip()
+
+            # 応答が空のまま返ることがある（思考にmax_tokensを使い切った場合など）。
+            # これを正常な戻り値として返すと、呼び出し側で「0点・やり直し」と解釈され、
+            # 技術的な失敗なのに高価な作り直しが無言で走る。失敗として扱いリトライする。
+            if not output_text:
+                raise RuntimeError(
+                    f"{agent_name} の応答が空だった"
+                    f"（stop_reason={getattr(response, 'stop_reason', '?')}, "
+                    f"出力トークン={getattr(getattr(response, 'usage', None), 'output_tokens', '?')}）。"
+                    "max_tokens を増やす必要がある可能性が高い"
+                )
+
+            # 途中で打ち切られた応答は不完全なので、気づけるようにログへ残す
+            if getattr(response, "stop_reason", None) == "max_tokens":
+                db.log_agent_run(
+                    song_id, agent_name, user_message,
+                    f"[WARN] max_tokensで打ち切られた（不完全な可能性あり）\n{output_text}",
+                )
+                return output_text
+
             db.log_agent_run(song_id, agent_name, user_message, output_text)
             return output_text
         except Exception as exc:  # noqa: BLE001 - リトライのため意図的に広く捕捉

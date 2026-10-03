@@ -142,7 +142,19 @@ def advance(song_id: int) -> str:
         round_no = len(db.list_reviews(song_id)) + 1
         review = runner.run_agent("quality_check_agent", upstream,
                                    extra_context=f"Review {round_no}回目", song_id=song_id)
-        score = _extract_score(review) or 0
+        parsed = _extract_score(review)
+        if parsed is None:
+            # 本文はあるのに採点が読み取れない＝出力フォーマットの崩れ。
+            # 0点として扱うと作り直しが空回りするだけなので、人の判断に回す。
+            _write(song_id, f"quality_review_round{round_no}.md", review)
+            _write(song_id, "quality_review.md", review)
+            db.save_review(song_id, round_no, 0,
+                           breakdown={"parse_failed": True, "raw": review[:500]},
+                           verdict="parse_failed", notes=review)
+            db.update_status(song_id, "qc_pending")
+            return "qc_pending"
+
+        score = parsed
         verdict = "pass" if score >= config.QC_PASS_SCORE else "redo"
         db.save_review(song_id, round_no, score, breakdown={"raw": review[:500]}, verdict=verdict, notes=review)
         _write(song_id, f"quality_review_round{round_no}.md", review)
