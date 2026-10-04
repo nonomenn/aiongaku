@@ -31,8 +31,8 @@ Streamlit は Vercel では動きません。設定の問題ではなく構造�
 1. GitHub にこのリポジトリを push する
 2. Render で **New > Blueprint** を選び、このリポジトリを指定する
 3. `render.yaml` が読み込まれる
-   - このファイルは `amps/` の中にあります。Blueprint はリポジトリ直下を見るため、
-     **`render.yaml` をリポジトリ直下へコピーする**か、Render 側で rootDir を `amps` に設定してください
+   - 共有用リポジトリ（`nonomenn/aiongaku`）ではルートにあるのでそのまま読まれます
+   - `AI-` リポジトリの `amps/` 配下で使う場合のみ、Render 側で rootDir に `amps` を指定してください
 4. 環境変数を管理画面で手入力する（リポジトリには置かない）
    - `ANTHROPIC_API_KEY`
    - `AMPS_DASHBOARD_PASSWORD` … 強いパスワードにすること

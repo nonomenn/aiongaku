@@ -2,15 +2,14 @@
 # Render の「New > Blueprint」からこのリポジトリを選ぶと読み込まれる。
 # 手順は DEPLOY.md を参照。
 #
-# 注意: このファイルはリポジトリのルートではなく amps/ の中にある。
-# Blueprint はリポジトリ直下を見るため、Render 側で rootDir を amps に指定するか、
-# このファイルをリポジトリ直下へ移すこと（DEPLOY.md に記載）。
+# 共有用リポジトリ（nonomenn/aiongaku）ではこのファイルがリポジトリ直下に来るため
+# rootDir の指定は不要。AI- リポジトリの amps/ 配下で使う場合のみ、
+# Render 側で rootDir に amps を指定すること。
 
 services:
   - type: web
     name: amps-dashboard
     runtime: docker
-    rootDir: amps
     plan: starter          # 永続ディスクは有料プランが必要（無料プランでは使えない）
     healthCheckPath: /_stcore/health
     envVars:
