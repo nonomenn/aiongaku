@@ -7,7 +7,7 @@ segs=json.load(open("work/segments.json"))
 raw=subprocess.run(["ffmpeg","-v","error","-i","work/voice16k.wav","-f","s16le","-"],capture_output=True,check=True).stdout
 x=np.frombuffer(raw,dtype=np.int16).astype(np.float32)/32768
 sr=16000
-m=WhisperModel("large-v3",device="cpu",compute_type="int8",cpu_threads=4)
+m=WhisperModel(os.environ.get("WM","large-v3"),device="cpu",compute_type="int8",cpu_threads=4)
 out=open(OUT,"a")
 for i,(s,e) in enumerate(segs):
     if idx is not None and i not in idx: continue

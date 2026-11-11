@@ -1,0 +1,309 @@
+{"i": 0, "start": 0.85, "end": 1.52, "lang": "en", "prob": 0.668, "text": "Mario!"}
+{"i": 3, "start": 4.61, "end": 5.72, "lang": "ja", "prob": 0.314, "text": ""}
+{"i": 6, "start": 9.06, "end": 10.6, "lang": "en", "prob": 0.417, "text": "Doors have us!"}
+{"i": 9, "start": 15.040000000000001, "end": 15.290000000000001, "lang": "en", "prob": 0.363, "text": ""}
+{"i": 12, "start": 20.22, "end": 21.39, "lang": "en", "prob": 0.418, "text": "Luigi!"}
+{"i": 15, "start": 23.73, "end": 26.38, "lang": "en", "prob": 0.481, "text": "Captain Valkyrie!"}
+{"i": 18, "start": 28.75, "end": 29.92, "lang": "en", "prob": 0.443, "text": ""}
+{"i": 21, "start": 33.84, "end": 34.7, "lang": "ja", "prob": 0.397, "text": "ループナー!"}
+{"i": 24, "start": 37.160000000000004, "end": 39.03, "lang": "en", "prob": 0.499, "text": "Oh"}
+{"i": 27, "start": 41.12, "end": 41.37, "lang": "en", "prob": 0.247, "text": "you"}
+{"i": 30, "start": 44.6, "end": 45.92, "lang": "en", "prob": 0.672, "text": "NOVA!"}
+{"i": 33, "start": 48.06, "end": 48.53, "lang": "en", "prob": 0.275, "text": "You"}
+{"i": 36, "start": 52.61, "end": 54.61, "lang": "en", "prob": 0.398, "text": "BABY!"}
+{"i": 39, "start": 56.77, "end": 57.0, "lang": "en", "prob": 0.286, "text": "you"}
+{"i": 42, "start": 61.24, "end": 63.36, "lang": "en", "prob": 0.479, "text": ""}
+{"i": 45, "start": 68.73, "end": 69.41, "lang": "en", "prob": 0.232, "text": ""}
+{"i": 48, "start": 71.78, "end": 72.01, "lang": "en", "prob": 0.538, "text": "you"}
+{"i": 51, "start": 74.16, "end": 74.64, "lang": "en", "prob": 0.858, "text": ""}
+{"i": 54, "start": 78.38, "end": 78.97, "lang": "en", "prob": 0.36, "text": ""}
+{"i": 57, "start": 80.63, "end": 81.38, "lang": "ja", "prob": 0.331, "text": ""}
+{"i": 60, "start": 87.43, "end": 88.54, "lang": "en", "prob": 0.712, "text": "Oh, man!"}
+{"i": 63, "start": 94.85000000000001, "end": 95.07000000000001, "lang": "en", "prob": 0.367, "text": "you"}
+{"i": 66, "start": 98.31, "end": 99.60000000000001, "lang": "ja", "prob": 0.325, "text": "おらべと!"}
+{"i": 69, "start": 102.64, "end": 102.93, "lang": "en", "prob": 0.358, "text": "you"}
+{"i": 72, "start": 110.04, "end": 111.5, "lang": "en", "prob": 0.712, "text": "Take red from the full bar!"}
+{"i": 75, "start": 117.03, "end": 118.94, "lang": "en", "prob": 0.817, "text": "Focus!"}
+{"i": 78, "start": 123.95, "end": 124.87, "lang": "en", "prob": 0.499, "text": "Oh"}
+{"i": 81, "start": 129.07, "end": 129.42000000000002, "lang": "en", "prob": 0.265, "text": "you"}
+{"i": 84, "start": 135.37, "end": 136.82, "lang": "ja", "prob": 0.302, "text": "はっはっ"}
+{"i": 87, "start": 140.49, "end": 141.07, "lang": "en", "prob": 0.716, "text": "Heaven!"}
+{"i": 90, "start": 143.96, "end": 144.21, "lang": "en", "prob": 0.38, "text": "you"}
+{"i": 93, "start": 147.23, "end": 147.48, "lang": "en", "prob": 0.287, "text": "you"}
+{"i": 96, "start": 150.02, "end": 151.12, "lang": "en", "prob": 0.657, "text": "Play!"}
+{"i": 99, "start": 155.91, "end": 156.15, "lang": "en", "prob": 0.329, "text": "you"}
+{"i": 102, "start": 159.28, "end": 159.88, "lang": "en", "prob": 0.36, "text": "you"}
+{"i": 105, "start": 162.87, "end": 164.23, "lang": "en", "prob": 0.531, "text": "Now, Gion!"}
+{"i": 108, "start": 168.08, "end": 170.08, "lang": "en", "prob": 0.538, "text": ""}
+{"i": 111, "start": 173.67000000000002, "end": 174.20000000000002, "lang": "en", "prob": 0.329, "text": "you"}
+{"i": 114, "start": 177.42000000000002, "end": 180.06, "lang": "en", "prob": 0.784, "text": "Ridley!"}
+{"i": 117, "start": 184.61, "end": 184.87, "lang": "en", "prob": 0.226, "text": "you"}
+{"i": 120, "start": 188.97, "end": 190.52, "lang": "en", "prob": 0.725, "text": "Don't ever..."}
+{"i": 123, "start": 194.59, "end": 194.82, "lang": "en", "prob": 0.273, "text": "Thank you"}
+{"i": 126, "start": 197.43, "end": 198.31, "lang": "en", "prob": 0.425, "text": "Pikachu!"}
+{"i": 129, "start": 201.27, "end": 201.8, "lang": "en", "prob": 0.52, "text": "That's it!"}
+{"i": 132, "start": 205.05, "end": 206.07, "lang": "en", "prob": 0.595, "text": "You're going to die."}
+{"i": 135, "start": 210.88, "end": 211.34, "lang": "ja", "prob": 0.309, "text": ""}
+{"i": 138, "start": 214.37, "end": 215.15, "lang": "en", "prob": 0.489, "text": ""}
+{"i": 141, "start": 217.8, "end": 218.33, "lang": "en", "prob": 0.283, "text": ""}
+{"i": 144, "start": 224.84, "end": 226.15, "lang": "en", "prob": 0.301, "text": ""}
+{"i": 147, "start": 229.38, "end": 229.62, "lang": "en", "prob": 0.407, "text": "you"}
+{"i": 150, "start": 232.55, "end": 234.02, "lang": "en", "prob": 0.472, "text": ""}
+{"i": 153, "start": 236.94, "end": 238.31, "lang": "ja", "prob": 0.649, "text": "Youtube!"}
+{"i": 156, "start": 241.24, "end": 242.69, "lang": "en", "prob": 0.52, "text": "Wrong!"}
+{"i": 159, "start": 247.44, "end": 248.77, "lang": "en", "prob": 0.265, "text": ""}
+{"i": 162, "start": 251.56, "end": 253.55, "lang": "en", "prob": 0.752, "text": "Zero, seven."}
+{"i": 165, "start": 257.01, "end": 257.27, "lang": "en", "prob": 0.379, "text": "you"}
+{"i": 168, "start": 262.0, "end": 263.83, "lang": "en", "prob": 0.545, "text": ""}
+{"i": 171, "start": 266.57, "end": 268.45, "lang": "en", "prob": 0.726, "text": "Those will be not ever no more!"}
+{"i": 174, "start": 275.03000000000003, "end": 276.72, "lang": "en", "prob": 0.553, "text": "Kill him now!"}
+{"i": 177, "start": 283.29, "end": 283.53000000000003, "lang": "en", "prob": 0.434, "text": "you"}
+{"i": 180, "start": 287.09000000000003, "end": 290.52, "lang": "ja", "prob": 0.562, "text": ""}
+{"i": 183, "start": 295.47, "end": 295.97, "lang": "en", "prob": 0.275, "text": ""}
+{"i": 186, "start": 303.1, "end": 303.91, "lang": "ja", "prob": 0.4, "text": "ゴー!"}
+{"i": 189, "start": 307.65000000000003, "end": 307.88, "lang": "en", "prob": 0.327, "text": ""}
+{"i": 192, "start": 310.02, "end": 311.36, "lang": "en", "prob": 0.78, "text": "Real!"}
+{"i": 195, "start": 313.3, "end": 313.51, "lang": "en", "prob": 0.35, "text": ""}
+{"i": 198, "start": 318.05, "end": 319.29, "lang": "en", "prob": 0.444, "text": ""}
+{"i": 201, "start": 323.06, "end": 324.41, "lang": "ja", "prob": 0.534, "text": ""}
+{"i": 204, "start": 326.77, "end": 328.81, "lang": "en", "prob": 0.821, "text": ""}
+{"i": 207, "start": 332.44, "end": 333.55, "lang": "ja", "prob": 0.372, "text": "シノロー!"}
+{"i": 210, "start": 337.37, "end": 339.01, "lang": "en", "prob": 0.407, "text": ""}
+{"i": 213, "start": 342.43, "end": 342.72, "lang": "en", "prob": 0.28, "text": ""}
+{"i": 216, "start": 345.90000000000003, "end": 349.25, "lang": "en", "prob": 0.786, "text": "Red Wing!"}
+{"i": 219, "start": 353.82, "end": 354.29, "lang": "en", "prob": 0.271, "text": "CLEAN!"}
+{"i": 222, "start": 357.86, "end": 362.04, "lang": "en", "prob": 0.585, "text": "That means four. Beauty!"}
+{"i": 225, "start": 365.24, "end": 365.49, "lang": "en", "prob": 0.426, "text": "you"}
+{"i": 228, "start": 367.63, "end": 368.96, "lang": "ja", "prob": 0.317, "text": "ドイツ!"}
+{"i": 231, "start": 374.91, "end": 376.67, "lang": "en", "prob": 0.492, "text": ""}
+{"i": 234, "start": 380.88, "end": 381.11, "lang": "en", "prob": 0.321, "text": "you"}
+{"i": 237, "start": 383.49, "end": 384.67, "lang": "en", "prob": 0.414, "text": "And go!"}
+{"i": 240, "start": 388.51, "end": 388.76, "lang": "en", "prob": 0.412, "text": "You"}
+{"i": 243, "start": 391.24, "end": 392.24, "lang": "en", "prob": 0.7, "text": "Hey!"}
+{"i": 246, "start": 395.34000000000003, "end": 395.91, "lang": "en", "prob": 0.619, "text": ""}
+{"i": 249, "start": 400.68, "end": 402.0, "lang": "ja", "prob": 0.468, "text": "YouTube!"}
+{"i": 252, "start": 405.23, "end": 405.47, "lang": "en", "prob": 0.339, "text": "You"}
+{"i": 255, "start": 408.39, "end": 409.81, "lang": "fr", "prob": 0.242, "text": ""}
+{"i": 258, "start": 413.18, "end": 413.72, "lang": "en", "prob": 0.263, "text": "you"}
+{"i": 261, "start": 416.66, "end": 417.49, "lang": "en", "prob": 0.431, "text": ""}
+{"i": 264, "start": 421.67, "end": 423.64, "lang": "de", "prob": 0.338, "text": "Wetter auf den Cookie-Malm!"}
+{"i": 267, "start": 429.57, "end": 429.8, "lang": "en", "prob": 0.339, "text": ""}
+{"i": 270, "start": 434.8, "end": 436.23, "lang": "fr", "prob": 0.439, "text": "Pied à jour, là !"}
+{"i": 273, "start": 438.93, "end": 441.1, "lang": "ja", "prob": 0.762, "text": "レインカフェ!"}
+{"i": 276, "start": 442.95, "end": 444.37, "lang": "ja", "prob": 0.457, "text": "ルカビオー!"}
+{"i": 279, "start": 448.58, "end": 450.81, "lang": "en", "prob": 0.386, "text": "Sunny! Luca!"}
+{"i": 282, "start": 456.34000000000003, "end": 456.59000000000003, "lang": "en", "prob": 0.485, "text": "you"}
+{"i": 285, "start": 459.8, "end": 460.04, "lang": "en", "prob": 0.412, "text": "you"}
+{"i": 288, "start": 464.05, "end": 465.47, "lang": "en", "prob": 0.375, "text": "See you!"}
+{"i": 291, "start": 468.06, "end": 468.82, "lang": "en", "prob": 0.305, "text": "Kofi!"}
+{"i": 294, "start": 476.51, "end": 477.64, "lang": "en", "prob": 0.234, "text": "It is me!"}
+{"i": 297, "start": 482.72, "end": 484.37, "lang": "fr", "prob": 0.561, "text": "Marie !"}
+{"i": 300, "start": 487.41, "end": 488.85, "lang": "de", "prob": 0.361, "text": "Richtig!"}
+{"i": 303, "start": 491.33, "end": 491.58, "lang": "en", "prob": 0.324, "text": "you"}
+{"i": 306, "start": 497.06, "end": 497.77000000000004, "lang": "en", "prob": 0.431, "text": ""}
+{"i": 309, "start": 503.14, "end": 504.94, "lang": "en", "prob": 0.409, "text": "Yoshi!"}
+{"i": 312, "start": 508.77000000000004, "end": 509.88, "lang": "en", "prob": 0.415, "text": "Pikachu!"}
+{"i": 315, "start": 514.0, "end": 515.47, "lang": "fi", "prob": 0.216, "text": "Kapitalta Fajtos!"}
+{"i": 318, "start": 518.78, "end": 520.32, "lang": "es", "prob": 0.474, "text": "Ya no soy."}
+{"i": 321, "start": 524.95, "end": 525.32, "lang": "en", "prob": 0.487, "text": "you"}
+{"i": 324, "start": 532.7, "end": 534.25, "lang": "ja", "prob": 0.624, "text": "じゃんけんだ!"}
+{"i": 327, "start": 536.29, "end": 538.07, "lang": "de", "prob": 0.329, "text": "Eisleinbett!"}
+{"i": 330, "start": 540.73, "end": 542.08, "lang": "en", "prob": 0.744, "text": "Play C"}
+{"i": 333, "start": 545.95, "end": 547.95, "lang": "en", "prob": 0.278, "text": "Glory!"}
+{"i": 336, "start": 550.21, "end": 553.36, "lang": "en", "prob": 0.414, "text": "Use the game and watch. And the night."}
+{"i": 339, "start": 557.46, "end": 557.7, "lang": "en", "prob": 0.341, "text": "you"}
+{"i": 342, "start": 562.26, "end": 563.58, "lang": "en", "prob": 0.518, "text": "Hey!"}
+{"i": 345, "start": 565.73, "end": 566.07, "lang": "en", "prob": 0.367, "text": "you"}
+{"i": 348, "start": 569.87, "end": 570.78, "lang": "en", "prob": 0.314, "text": "We go!"}
+{"i": 351, "start": 576.61, "end": 577.0, "lang": "en", "prob": 0.351, "text": ""}
+{"i": 354, "start": 582.94, "end": 583.9, "lang": "es", "prob": 0.345, "text": "¡Al verano!"}
+{"i": 357, "start": 588.89, "end": 591.79, "lang": "en", "prob": 0.542, "text": "Go! Lucario!"}
+{"i": 360, "start": 596.38, "end": 596.63, "lang": "en", "prob": 0.308, "text": "you"}
+{"i": 363, "start": 599.83, "end": 600.11, "lang": "en", "prob": 0.312, "text": "you"}
+{"i": 366, "start": 606.1800000000001, "end": 607.3000000000001, "lang": "en", "prob": 0.557, "text": "Robin!"}
+{"i": 369, "start": 609.65, "end": 611.72, "lang": "en", "prob": 0.746, "text": ""}
+{"i": 372, "start": 614.48, "end": 615.16, "lang": "en", "prob": 0.522, "text": "Real!"}
+{"i": 375, "start": 618.35, "end": 619.47, "lang": "en", "prob": 0.439, "text": "Go!"}
+{"i": 378, "start": 623.1, "end": 624.36, "lang": "en", "prob": 0.327, "text": "Your day time"}
+{"i": 381, "start": 627.6800000000001, "end": 628.13, "lang": "en", "prob": 0.245, "text": "you"}
+{"i": 384, "start": 631.16, "end": 631.41, "lang": "en", "prob": 0.285, "text": "you"}
+{"i": 387, "start": 635.4300000000001, "end": 637.71, "lang": "es", "prob": 0.44, "text": "¡Creadora Mi!"}
+{"i": 390, "start": 643.13, "end": 643.39, "lang": "en", "prob": 0.266, "text": "you"}
+{"i": 393, "start": 648.73, "end": 649.84, "lang": "ja", "prob": 0.536, "text": "ナイドル!"}
+{"i": 396, "start": 653.1, "end": 653.42, "lang": "en", "prob": 0.314, "text": "you"}
+{"i": 399, "start": 658.77, "end": 659.37, "lang": "en", "prob": 0.522, "text": "Link!"}
+{"i": 402, "start": 661.15, "end": 661.89, "lang": "es", "prob": 0.551, "text": "¡Vamos!"}
+{"i": 405, "start": 663.66, "end": 665.33, "lang": "en", "prob": 0.371, "text": "Don't desert us!"}
+{"i": 408, "start": 668.77, "end": 670.19, "lang": "en", "prob": 0.667, "text": "Kirby!"}
+{"i": 411, "start": 673.45, "end": 674.3000000000001, "lang": "en", "prob": 0.754, "text": "Decepticons!"}
+{"i": 414, "start": 679.65, "end": 684.16, "lang": "en", "prob": 0.562, "text": "Captain Falcon, come on!"}
+{"i": 417, "start": 686.8100000000001, "end": 688.14, "lang": "en", "prob": 0.405, "text": "You know me!"}
+{"i": 420, "start": 693.14, "end": 696.87, "lang": "ja", "prob": 0.495, "text": "最高!キッチュー!"}
+{"i": 423, "start": 701.83, "end": 702.74, "lang": "en", "prob": 0.414, "text": ""}
+{"i": 426, "start": 705.96, "end": 707.08, "lang": "en", "prob": 0.515, "text": ""}
+{"i": 429, "start": 710.51, "end": 711.83, "lang": "en", "prob": 0.478, "text": "PISH!"}
+{"i": 432, "start": 717.09, "end": 718.3000000000001, "lang": "en", "prob": 0.608, "text": "RUMBLE!"}
+{"i": 435, "start": 723.36, "end": 724.04, "lang": "en", "prob": 0.391, "text": "KISS!"}
+{"i": 438, "start": 725.61, "end": 727.09, "lang": "en", "prob": 0.549, "text": "I'm stuck on hit!"}
+{"i": 441, "start": 731.26, "end": 733.36, "lang": "en", "prob": 0.475, "text": "BABY YORK!"}
+{"i": 444, "start": 737.0500000000001, "end": 737.3000000000001, "lang": "en", "prob": 0.365, "text": "you"}
+{"i": 447, "start": 742.69, "end": 743.61, "lang": "en", "prob": 0.642, "text": "Let's do this!"}
+{"i": 450, "start": 747.03, "end": 747.28, "lang": "en", "prob": 0.313, "text": ""}
+{"i": 453, "start": 752.9, "end": 754.22, "lang": "en", "prob": 0.436, "text": ""}
+{"i": 456, "start": 759.69, "end": 760.5500000000001, "lang": "en", "prob": 0.713, "text": "River!"}
+{"i": 459, "start": 764.17, "end": 765.32, "lang": "ja", "prob": 0.431, "text": "VOLUME!"}
+{"i": 462, "start": 771.07, "end": 772.72, "lang": "en", "prob": 0.445, "text": "Lucas!"}
+{"i": 465, "start": 778.34, "end": 778.58, "lang": "en", "prob": 0.438, "text": "you"}
+{"i": 468, "start": 781.82, "end": 782.73, "lang": "ja", "prob": 0.347, "text": "はっはっ"}
+{"i": 471, "start": 785.3000000000001, "end": 785.7, "lang": "en", "prob": 0.335, "text": "you"}
+{"i": 474, "start": 789.4200000000001, "end": 790.9, "lang": "en", "prob": 0.382, "text": "That comes to all!"}
+{"i": 477, "start": 795.73, "end": 795.98, "lang": "en", "prob": 0.433, "text": "you"}
+{"i": 480, "start": 799.88, "end": 800.14, "lang": "en", "prob": 0.422, "text": ""}
+{"i": 483, "start": 805.09, "end": 805.3100000000001, "lang": "en", "prob": 0.395, "text": "you"}
+{"i": 486, "start": 808.34, "end": 808.6, "lang": "en", "prob": 0.317, "text": "you"}
+{"i": 489, "start": 812.79, "end": 814.13, "lang": "en", "prob": 0.916, "text": "Me fucks having you."}
+{"i": 492, "start": 823.71, "end": 824.94, "lang": "de", "prob": 0.773, "text": "Richter!"}
+{"i": 495, "start": 832.53, "end": 832.77, "lang": "en", "prob": 0.394, "text": "you"}
+{"i": 498, "start": 835.6800000000001, "end": 837.13, "lang": "pl", "prob": 0.191, "text": "Bunky Kong!"}
+{"i": 501, "start": 840.8100000000001, "end": 841.07, "lang": "en", "prob": 0.373, "text": "you"}
+{"i": 504, "start": 845.8000000000001, "end": 846.9300000000001, "lang": "en", "prob": 0.609, "text": "Give me!"}
+{"i": 507, "start": 851.01, "end": 852.33, "lang": "ja", "prob": 0.374, "text": "ドイジー!"}
+{"i": 510, "start": 854.48, "end": 854.95, "lang": "en", "prob": 0.312, "text": "you"}
+{"i": 513, "start": 859.03, "end": 861.0500000000001, "lang": "it", "prob": 0.562, "text": "Cana dog"}
+{"i": 516, "start": 864.04, "end": 865.38, "lang": "en", "prob": 0.278, "text": "Luchina!"}
+{"i": 519, "start": 871.24, "end": 874.78, "lang": "es", "prob": 0.61, "text": "¡Dr. Mario! ¡Velda!"}
+{"i": 522, "start": 877.12, "end": 878.51, "lang": "en", "prob": 0.239, "text": "Ice climb, Berzer!"}
+{"i": 525, "start": 881.35, "end": 882.78, "lang": "en", "prob": 0.813, "text": "Daisy!"}
+{"i": 528, "start": 887.08, "end": 888.0, "lang": "en", "prob": 0.552, "text": "Roy!"}
+{"i": 531, "start": 890.84, "end": 893.21, "lang": "it", "prob": 0.431, "text": "Mr. Game & Watch!"}
+{"i": 534, "start": 897.3100000000001, "end": 898.77, "lang": "de", "prob": 0.424, "text": "Dick aus guter!"}
+{"i": 537, "start": 904.37, "end": 905.33, "lang": "en", "prob": 0.37, "text": "Mate!"}
+{"i": 540, "start": 907.57, "end": 909.35, "lang": "it", "prob": 0.775, "text": "Allegatore di Pokemon!"}
+{"i": 543, "start": 919.23, "end": 920.0500000000001, "lang": "en", "prob": 0.782, "text": "Mega Man!"}
+{"i": 546, "start": 927.5600000000001, "end": 929.64, "lang": "en", "prob": 0.558, "text": "No!"}
+{"i": 549, "start": 932.76, "end": 934.75, "lang": "en", "prob": 0.426, "text": "On your mark!"}
+{"i": 552, "start": 937.75, "end": 939.3000000000001, "lang": "en", "prob": 0.46, "text": "So, Nick!"}
+{"i": 555, "start": 943.85, "end": 945.41, "lang": "it", "prob": 0.52, "text": "Pallutena!"}
+{"i": 558, "start": 949.2, "end": 953.0, "lang": "en", "prob": 0.758, "text": "Two thousand juniors."}
+{"i": 561, "start": 956.0, "end": 956.8100000000001, "lang": "en", "prob": 0.435, "text": "Real!"}
+{"i": 564, "start": 959.52, "end": 962.58, "lang": "ru", "prob": 0.186, "text": "КЛАУДЕ! КАРРЫ!"}
+{"i": 567, "start": 967.54, "end": 967.98, "lang": "en", "prob": 0.297, "text": "you"}
+{"i": 570, "start": 972.77, "end": 973.02, "lang": "en", "prob": 0.414, "text": ""}
+{"i": 573, "start": 977.98, "end": 979.74, "lang": "en", "prob": 0.496, "text": "Okay!"}
+{"i": 576, "start": 986.46, "end": 987.8100000000001, "lang": "en", "prob": 0.397, "text": "Victory!"}
+{"i": 579, "start": 991.78, "end": 992.89, "lang": "en", "prob": 0.7, "text": "Mario!"}
+{"i": 582, "start": 999.15, "end": 1000.5400000000001, "lang": "en", "prob": 0.906, "text": "Dark Seminoles"}
+{"i": 585, "start": 1002.6700000000001, "end": 1002.9, "lang": "en", "prob": 0.358, "text": "you"}
+{"i": 588, "start": 1005.27, "end": 1006.23, "lang": "en", "prob": 0.535, "text": "Fox!"}
+{"i": 591, "start": 1008.4200000000001, "end": 1010.5500000000001, "lang": "en", "prob": 0.619, "text": ""}
+{"i": 594, "start": 1014.97, "end": 1016.16, "lang": "en", "prob": 0.688, "text": "Gigglypuff!"}
+{"i": 597, "start": 1019.25, "end": 1020.74, "lang": "ja", "prob": 0.355, "text": "4万円!"}
+{"i": 600, "start": 1026.56, "end": 1026.81, "lang": "en", "prob": 0.338, "text": "you"}
+{"i": 603, "start": 1029.63, "end": 1030.96, "lang": "en", "prob": 0.545, "text": "Beat you!"}
+{"i": 606, "start": 1037.22, "end": 1038.65, "lang": "en", "prob": 0.739, "text": "Ice"}
+{"i": 609, "start": 1042.22, "end": 1043.32, "lang": "en", "prob": 0.318, "text": ""}
+{"i": 612, "start": 1047.44, "end": 1048.55, "lang": "en", "prob": 0.586, "text": "Oh"}
+{"i": 615, "start": 1054.39, "end": 1055.3, "lang": "en", "prob": 0.308, "text": ""}
+{"i": 618, "start": 1060.21, "end": 1062.24, "lang": "en", "prob": 0.555, "text": "Zero shoes sevens."}
+{"i": 621, "start": 1066.35, "end": 1067.57, "lang": "en", "prob": 0.188, "text": ""}
+{"i": 624, "start": 1071.98, "end": 1073.57, "lang": "ja", "prob": 0.283, "text": "レロンマン!"}
+{"i": 627, "start": 1076.79, "end": 1082.9, "lang": "de", "prob": 0.385, "text": "Die Fit Trainer! Mega Man! Tots zu wohnen!"}
+{"i": 630, "start": 1087.3, "end": 1088.07, "lang": "en", "prob": 0.588, "text": "Long!"}
+{"i": 633, "start": 1097.3500000000001, "end": 1100.59, "lang": "ko", "prob": 0.319, "text": "이샤팬이 이샤팬. 하루테인아."}
+{"i": 636, "start": 1104.74, "end": 1106.83, "lang": "en", "prob": 0.734, "text": "Go!"}
+{"i": 639, "start": 1113.53, "end": 1114.98, "lang": "en", "prob": 0.401, "text": "Oh"}
+{"i": 642, "start": 1120.18, "end": 1121.6000000000001, "lang": "en", "prob": 0.86, "text": "In cleaning!"}
+{"i": 645, "start": 1124.6100000000001, "end": 1126.8, "lang": "de", "prob": 0.283, "text": "Wie Schwarmfekter!"}
+{"i": 648, "start": 1132.4, "end": 1133.76, "lang": "en", "prob": 0.34, "text": "Chabrero!"}
+{"i": 651, "start": 1138.53, "end": 1138.78, "lang": "en", "prob": 0.377, "text": "you"}
+{"i": 654, "start": 1146.09, "end": 1146.98, "lang": "es", "prob": 0.353, "text": "Adiós"}
+{"i": 657, "start": 1152.19, "end": 1153.65, "lang": "en", "prob": 0.525, "text": "Come on!"}
+{"i": 660, "start": 1158.38, "end": 1158.6200000000001, "lang": "en", "prob": 0.409, "text": "you"}
+{"i": 663, "start": 1161.18, "end": 1161.41, "lang": "en", "prob": 0.439, "text": "you"}
+{"i": 666, "start": 1163.58, "end": 1164.9, "lang": "ja", "prob": 0.252, "text": "ていかちょー"}
+{"i": 669, "start": 1169.55, "end": 1171.31, "lang": "en", "prob": 0.352, "text": "That's it, Tom!"}
+{"i": 672, "start": 1174.83, "end": 1176.0, "lang": "pt", "prob": 0.23, "text": "TANONTORO!"}
+{"i": 675, "start": 1182.05, "end": 1184.06, "lang": "en", "prob": 0.636, "text": ""}
+{"i": 678, "start": 1187.75, "end": 1188.33, "lang": "en", "prob": 0.329, "text": "you"}
+{"i": 681, "start": 1191.45, "end": 1192.43, "lang": "en", "prob": 0.397, "text": "Hey there!"}
+{"i": 684, "start": 1195.22, "end": 1197.3500000000001, "lang": "en", "prob": 0.37, "text": "I'll finish it!"}
+{"i": 687, "start": 1200.1000000000001, "end": 1201.41, "lang": "en", "prob": 0.342, "text": "Hey, you see!"}
+{"i": 690, "start": 1204.67, "end": 1205.78, "lang": "ja", "prob": 0.327, "text": "まゆうと!"}
+{"i": 693, "start": 1208.6000000000001, "end": 1209.94, "lang": "en", "prob": 0.307, "text": "Roar!"}
+{"i": 696, "start": 1214.04, "end": 1214.29, "lang": "en", "prob": 0.285, "text": "you"}
+{"i": 699, "start": 1218.6100000000001, "end": 1218.8600000000001, "lang": "en", "prob": 0.463, "text": ""}
+{"i": 702, "start": 1221.77, "end": 1224.83, "lang": "es", "prob": 0.584, "text": "¡Vamos, Nolka Shunel!"}
+{"i": 705, "start": 1229.02, "end": 1229.26, "lang": "en", "prob": 0.377, "text": "you"}
+{"i": 708, "start": 1231.41, "end": 1231.66, "lang": "en", "prob": 0.351, "text": "you"}
+{"i": 711, "start": 1234.9, "end": 1236.21, "lang": "en", "prob": 0.46, "text": "Kijipon!"}
+{"i": 714, "start": 1238.3600000000001, "end": 1240.3600000000001, "lang": "en", "prob": 0.233, "text": "MALLOWS MY MOTHER!"}
+{"i": 717, "start": 1247.8, "end": 1249.05, "lang": "en", "prob": 0.375, "text": "Yeah, come on!"}
+{"i": 720, "start": 1253.82, "end": 1255.39, "lang": "ar", "prob": 0.181, "text": "أول بلي!"}
+{"i": 723, "start": 1258.16, "end": 1258.48, "lang": "en", "prob": 0.285, "text": "you"}
+{"i": 726, "start": 1261.65, "end": 1263.19, "lang": "tr", "prob": 0.521, "text": "Alevah!"}
+{"i": 729, "start": 1267.28, "end": 1268.69, "lang": "en", "prob": 0.255, "text": ""}
+{"i": 732, "start": 1273.8, "end": 1274.71, "lang": "ru", "prob": 0.494, "text": "Бегин!"}
+{"i": 735, "start": 1280.13, "end": 1281.07, "lang": "en", "prob": 0.259, "text": ""}
+{"i": 738, "start": 1285.24, "end": 1287.33, "lang": "en", "prob": 0.701, "text": "Oh, sir, look!"}
+{"i": 741, "start": 1292.8600000000001, "end": 1294.7, "lang": "en", "prob": 0.564, "text": "Yeah!"}
+{"i": 744, "start": 1297.46, "end": 1298.0, "lang": "en", "prob": 0.31, "text": ""}
+{"i": 747, "start": 1302.07, "end": 1303.19, "lang": "en", "prob": 0.423, "text": "GIFT LEADER!"}
+{"i": 750, "start": 1307.6100000000001, "end": 1309.8, "lang": "ru", "prob": 0.226, "text": "Инфинерал!"}
+{"i": 753, "start": 1312.91, "end": 1314.38, "lang": "en", "prob": 0.368, "text": "King Arroy!"}
+{"i": 756, "start": 1318.24, "end": 1319.6200000000001, "lang": "ja", "prob": 0.506, "text": "アイマン!"}
+{"i": 759, "start": 1324.34, "end": 1324.92, "lang": "en", "prob": 0.242, "text": "you"}
+{"i": 762, "start": 1330.53, "end": 1333.07, "lang": "en", "prob": 0.718, "text": "Lord Samus Yoshi!"}
+{"i": 765, "start": 1335.73, "end": 1336.54, "lang": "en", "prob": 0.598, "text": "Fuck!"}
+{"i": 768, "start": 1339.97, "end": 1343.81, "lang": "ja", "prob": 0.588, "text": ""}
+{"i": 771, "start": 1348.99, "end": 1349.89, "lang": "en", "prob": 0.444, "text": "BORN!"}
+{"i": 774, "start": 1353.14, "end": 1354.91, "lang": "en", "prob": 0.638, "text": "Dr. Mario!"}
+{"i": 777, "start": 1358.25, "end": 1360.48, "lang": "en", "prob": 0.715, "text": "Ice Climber, KUPA!"}
+{"i": 780, "start": 1363.49, "end": 1364.8500000000001, "lang": "ko", "prob": 0.435, "text": "유저"}
+{"i": 783, "start": 1371.64, "end": 1372.3500000000001, "lang": "en", "prob": 0.387, "text": ""}
+{"i": 786, "start": 1376.05, "end": 1377.59, "lang": "en", "prob": 0.747, "text": ""}
+{"i": 789, "start": 1380.76, "end": 1384.08, "lang": "en", "prob": 0.727, "text": "Pokemon Trainer, Hittie Kong!"}
+{"i": 792, "start": 1394.24, "end": 1395.16, "lang": "en", "prob": 0.784, "text": "Holy!"}
+{"i": 795, "start": 1398.31, "end": 1401.69, "lang": "en", "prob": 0.75, "text": ""}
+{"i": 798, "start": 1405.54, "end": 1406.73, "lang": "en", "prob": 0.587, "text": "Oh God!"}
+{"i": 801, "start": 1410.46, "end": 1411.21, "lang": "en", "prob": 0.751, "text": "RETLINE!"}
+{"i": 804, "start": 1414.67, "end": 1415.33, "lang": "en", "prob": 0.549, "text": "Junior!"}
+{"i": 807, "start": 1418.97, "end": 1420.02, "lang": "en", "prob": 0.433, "text": "And"}
+{"i": 810, "start": 1423.48, "end": 1424.69, "lang": "en", "prob": 0.643, "text": "Hey, don't matter!"}
+{"i": 813, "start": 1429.66, "end": 1431.1200000000001, "lang": "en", "prob": 0.769, "text": ""}
+{"i": 816, "start": 1438.69, "end": 1441.1100000000001, "lang": "ja", "prob": 0.793, "text": ""}
+{"i": 819, "start": 1446.03, "end": 1446.27, "lang": "en", "prob": 0.37, "text": "you"}
+{"i": 822, "start": 1449.51, "end": 1450.43, "lang": "en", "prob": 0.335, "text": "What?"}
+{"i": 825, "start": 1454.56, "end": 1456.71, "lang": "en", "prob": 0.811, "text": "Kirby! Baka!"}
+{"i": 828, "start": 1461.25, "end": 1462.54, "lang": "en", "prob": 0.531, "text": "I'm good, I'm good!"}
+{"i": 831, "start": 1466.04, "end": 1466.97, "lang": "ja", "prob": 0.399, "text": "ピアミウイン!"}
+{"i": 834, "start": 1472.1200000000001, "end": 1474.77, "lang": "en", "prob": 0.843, "text": "Dr. Mario Delma"}
+{"i": 837, "start": 1477.98, "end": 1478.68, "lang": "en", "prob": 0.491, "text": "Ho Ho!"}
+{"i": 840, "start": 1482.14, "end": 1488.89, "lang": "en", "prob": 0.829, "text": "You two! Royce! Wrong! Mr. Cayman wants better night!"}
+{"i": 843, "start": 1491.81, "end": 1495.76, "lang": "en", "prob": 0.438, "text": ""}
+{"i": 846, "start": 1506.52, "end": 1508.88, "lang": "ja", "prob": 0.513, "text": "おらめろ!"}
+{"i": 849, "start": 1512.3500000000001, "end": 1515.33, "lang": "en", "prob": 0.611, "text": "Lucario, kick-man and Voldemort!"}
+{"i": 852, "start": 1520.5, "end": 1522.8, "lang": "ja", "prob": 0.334, "text": "この子は、彼女の人だ!"}
+{"i": 855, "start": 1526.46, "end": 1530.21, "lang": "zh", "prob": 0.234, "text": ""}
+{"i": 858, "start": 1533.43, "end": 1534.56, "lang": "en", "prob": 0.541, "text": "Oh"}
+{"i": 861, "start": 1537.78, "end": 1542.41, "lang": "en", "prob": 0.558, "text": "Inflate! Re-Gun! Re-Sportlight!"}
+{"i": 864, "start": 1546.0, "end": 1547.2, "lang": "en", "prob": 0.592, "text": "Enjoy!"}
+{"i": 867, "start": 1550.64, "end": 1555.3600000000001, "lang": "ja", "prob": 0.445, "text": ""}
+{"i": 870, "start": 1558.69, "end": 1559.81, "lang": "en", "prob": 0.354, "text": ""}
+{"i": 873, "start": 1565.23, "end": 1566.4, "lang": "ja", "prob": 0.461, "text": "よし!"}
+{"i": 876, "start": 1569.45, "end": 1570.27, "lang": "en", "prob": 0.557, "text": "Pikachu!"}
+{"i": 879, "start": 1574.77, "end": 1575.3600000000001, "lang": "en", "prob": 0.269, "text": ""}
+{"i": 882, "start": 1581.29, "end": 1582.2, "lang": "en", "prob": 0.333, "text": "Outdoor!"}
+{"i": 885, "start": 1588.27, "end": 1589.29, "lang": "ja", "prob": 0.417, "text": "お伝えください"}
+{"i": 888, "start": 1596.73, "end": 1600.73, "lang": "en", "prob": 0.877, "text": "Wrong! Mr. Cayman wants better nights!"}
+{"i": 891, "start": 1608.06, "end": 1608.8500000000001, "lang": "en", "prob": 0.278, "text": ""}
+{"i": 894, "start": 1612.3, "end": 1613.54, "lang": "en", "prob": 0.59, "text": ""}
+{"i": 897, "start": 1618.91, "end": 1619.82, "lang": "en", "prob": 0.673, "text": "All to me!"}
+{"i": 900, "start": 1623.04, "end": 1624.17, "lang": "en", "prob": 0.355, "text": ""}
+{"i": 903, "start": 1630.66, "end": 1631.46, "lang": "en", "prob": 0.816, "text": "Lucas!"}
+{"i": 906, "start": 1635.88, "end": 1637.0, "lang": "en", "prob": 0.563, "text": "HECKHAAA!"}
+{"i": 909, "start": 1640.23, "end": 1642.2, "lang": "ko", "prob": 0.826, "text": "로퍼! 기분이 좋네!"}
+{"i": 912, "start": 1647.4, "end": 1648.76, "lang": "en", "prob": 0.703, "text": "Whoa!"}
+{"i": 915, "start": 1652.69, "end": 1653.48, "lang": "en", "prob": 0.707, "text": ""}
+{"i": 918, "start": 1662.6100000000001, "end": 1663.95, "lang": "en", "prob": 0.37, "text": "Yo!"}
+{"i": 921, "start": 1669.76, "end": 1670.03, "lang": "ja", "prob": 0.235, "text": "字幕をご覧いただきましてありがとうございました。"}
+{"i": 924, "start": 1672.39, "end": 1672.65, "lang": "en", "prob": 0.347, "text": "you"}
