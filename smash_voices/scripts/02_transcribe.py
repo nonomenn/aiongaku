@@ -15,6 +15,6 @@ for i,(s,e) in enumerate(segs):
     if i in have: continue
     a=x[int(max(0,s-0.3)*sr):int((e+0.3)*sr)]
     a=a/ (np.abs(a).max()+1e-9)*0.9
-    it,info=m.transcribe(a,beam_size=1,condition_on_previous_text=False,temperature=0,language=LANG)
+    it,info=m.transcribe(a,beam_size=1,condition_on_previous_text=False,temperature=0,language=LANG,initial_prompt=os.environ.get('PROMPT') or None)
     t="".join(q.text for q in it).strip()
     out.write(json.dumps(dict(i=i,start=s,end=e,lang=info.language,prob=round(info.language_probability,3),text=t),ensure_ascii=False)+"\n"); out.flush()
