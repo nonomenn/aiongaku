@@ -1,0 +1,50 @@
+{
+  "clinic_name": "みどり整体院（見本）",
+  "area": "大阪市〇〇区",
+  "checked_on": "2026年11月15日",
+  "summary": "Googleマップでの評価は高く、通っている方に満足されている院だと感じました。一方で、マップで見つけた方が「料金」と「予約方法」を確認できず、ポータルサイト経由か電話でしか予約できない状態です。せっかく来院された方に2回目を案内する仕組みもまだありません。",
+  "checks": {
+    "gm_hours":   {"status": "ok"},
+    "gm_photos":  {"status": "warn", "note": "写真4枚・最新が2年前"},
+    "gm_reply":   {"status": "ng",   "note": "口コミ38件・返信0件"},
+    "gm_website": {"status": "warn", "note": "ポータルサイトのページにリンク"},
+    "gm_booking": {"status": "ng"},
+    "gm_desc":    {"status": "warn", "note": "説明文が1行のみ"},
+    "hp_exists":  {"status": "ng",   "note": "ポータルサイトの掲載ページのみ"},
+    "hp_mobile":  {"status": "unknown"},
+    "hp_price":   {"status": "warn", "note": "ポータル上のみ記載"},
+    "hp_first":   {"status": "ng"},
+    "hp_cta":     {"status": "warn", "note": "電話番号のみ"},
+    "hp_fresh":   {"status": "unknown"},
+    "hp_ssl":     {"status": "unknown"},
+    "ln_account": {"status": "ng"},
+    "ln_link":    {"status": "ng"},
+    "ln_online":  {"status": "warn", "note": "ポータル経由のみ"},
+    "ln_follow":  {"status": "unknown", "note": "面談で確認"}
+  },
+  "top_issues": [
+    {
+      "title": "マップで見つけても、その場で予約できない",
+      "detail": "マップに予約リンクがなく、ポータルサイトか電話の2択です。施術中に鳴った電話は取れず、そのまま他院に流れている可能性があります。",
+      "fix": "マップの予約リンクとHPに、24時間受付のLINE予約を置く"
+    },
+    {
+      "title": "2回目の来店を案内する仕組みがない",
+      "detail": "口コミ38件と満足度は高いのに、来院後に院から連絡する手段がありません。整体院の売上は「2回目に来てもらえるか」で大きく変わります。",
+      "fix": "来店翌日のお礼と1か月後の案内をLINEで自動配信する"
+    },
+    {
+      "title": "口コミに返信していない",
+      "detail": "38件の口コミに返信が0件です。返信があると、これから来る方に「話を聞いてくれる院」だと伝わります。",
+      "fix": "まず直近10件にお礼の返信を付ける（無料ですぐできます）"
+    }
+  ],
+  "simulation": {
+    "unit_price": 5500,
+    "extra_repeat_per_month": 4
+  },
+  "sender": {
+    "name": "整体院専門 予約とリピートの仕組みづくり　〇〇（あなたの名前）",
+    "contact": "メール：xxxx@example.com"
+  }
+}
